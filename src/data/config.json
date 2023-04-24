@@ -1,0 +1,71 @@
+{
+    "name" : "Harikrishna Mekala",
+    "greeting": "Hiya, Ther! 👋",
+    "profilePic": "https://bkt.ams3.digitaloceanspaces.com/assets/propic.jpg",
+    "panda" : "https://bkt.ams3.digitaloceanspaces.com/assets/panda.jpg",
+    "about" : [
+        "I am Harikrishna Mekala, Some things about me,",
+        "I write code that helps me write less code... Developer with the ability to stare into a screen for longer periods of time without fatigue, also I am the person who invented a two-hour lunch break.",
+        "Jack of all trades, master of none, Most of the time I try to fix the cause, not the symptom.",
+        "Made Java for a couple of years with proficiency in PHP from college, trying to become a gopher.",
+        "Feel free to reach me out at me@hkmekala.me."
+    ],
+    "jobs": [
+        {
+            "role" : "Software Development Engineer 1",
+            "type": "Full Time",
+            "time" : "Apr 2022 - Present",
+            "companyName" : "Tickertape (Anchorage Technologies Pvt Ltd)",
+            "description" : [
+                "Developed the services to Rank Equity Mutual Funds based on the total market capitalization of a company held by the fund, and the percentage of funds allocated for the said company in their portfolio.",
+                "Added 24 new Indices into Tickertape's existing universe to help users track diverse sectors in the market.",
+                "Implemented the algorithm to calculate the PE (Profits to Earnings) and Volatility of the user's portfolio global and sector-based segregation view",
+                "Built highly available Tickertape's stock Scorecard API and Algorithm to calculate the diverse scores of individual stocks, Currently, scorecard serves 4.5 million users.",
+                "Added support for regular Mutual Funds for TickerTape, which led to an increase in the mutual fund universe by 50%.",
+                "Written internal services (GRPCs) to scale to millions of requests with efficient cache management using LRU.",
+                "Took the initiative of moving out from Tickertape's old API to a new pod-level segregation edge service by using the NestJS framework.",
+                "Ensured the code quality by performing timely code reviews of peers."
+            ]
+        },
+        {
+            "role" : "Software Engineer",
+            "type": "Contract",
+            "time" : "Nov 2019 - Mar 2022",
+            "companyName" : "Blogsbunny (Aardwolf Security Pvt Ltd)",
+            "description" : [
+                "Built a highly available, fault-tolerant content ranking system and provided a REST interface to the algorithms.",
+                "Developed the Parsing Engine to scrape the RSS feeds of blogs and rank the content in the articles.",
+                "Completed the Setup of the entire CI/CD flow with SonarQube from Integration to the deployment of all the builds with automated code reviews.",
+                "Developed the affiliate system to reward the users for referrals to Blogsbunny using Paypal Payout Integration.",
+                "Came up with an automated firewall-based throttling in a case of a DDOS attack on the API by analyzing short-range traffic bursts in the API code.",
+                "Implemented the Queuing mechanism of Blogsbunny content analysis to process large sets of news using the manager-worker model.",
+                "Implemented the delivery of the images through Edge Nodes using KeyCDN and Digital Ocean Spaces as the storage repository.",
+                "Extensive working experience using Scrum Agile Methodologies and Agile Development."
+            ]
+        },
+        {
+            "role" : "Software Engineer",
+            "type": "Full Time",
+            "time" : "Jul 2019 - Nov 2019",
+            "companyName" : "Kloudgin (Enterprise Signal Pvt Ltd)",
+            "description" : [
+                "Designed and implemented a modular, extendable, and easily maintainable Netsuite integration package to Kloudgin FSM tailored to the customer's needs.",
+                "Built customization to the Kloudgin UI to enable integration between platforms.",
+                "Developed a distributed system for migration of large-scale datasets using a Multi-Threaded Data Migration Library to import customer's data from various platforms to Kloudgin ERP."
+            ]
+        },
+        {
+            "role" : "Technical Consultant",
+            "type": "Full Time",
+            "time" : "Nov 2019 - Mar 2022",
+            "companyName" : "Infovity (Infovity India Pvt Ltd)",
+            "description" : [
+                "Added the support for video streaming for the crew training module for learning in Kloudgin.",
+                "Developed a wrapper to the Java iText Library to help facilitate the easy generation of the custom invoices in Kloudgin tailored to the developer's needs.",
+                "Developed an automated Jar deployment plugin to enable the faster deployments of the business logic in the application.",
+                "Worked on changing the business logic in Kloudgin backend based on the Tech Specification received from the customers.",
+                "Designed and Developed an internal application with microservices using docker for tracking employee billables and biometric data in Infovity."
+            ]
+        }
+    ]
+}
