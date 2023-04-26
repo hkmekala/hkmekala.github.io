@@ -16,6 +16,7 @@
             "type": "Full Time",
             "time" : "Apr 2022 - Present",
             "companyName" : "Tickertape (Anchorage Technologies Pvt Ltd)",
+            "tech": ["TypeScript", "GoLang", "NestJs", "ExpressJs", "InfluxDb", "TimeScaleDb", "Mongo", "gRPC", "Pm2"],
             "description" : [
                 "Developed the services to Rank Equity Mutual Funds based on the total market capitalization of a company held by the fund, and the percentage of funds allocated for the said company in their portfolio.",
                 "Added 24 new Indices into Tickertape's existing universe to help users track diverse sectors in the market.",
@@ -32,6 +33,7 @@
             "type": "Contract",
             "time" : "Nov 2019 - Mar 2022",
             "companyName" : "Blogsbunny (Aardwolf Security Pvt Ltd)",
+            "tech": ["PHP", "Python", "Java", "Shell", "Laraval", "Flask", "MySQL", "Docker", "Nginx", "Apache2"],
             "description" : [
                 "Built a highly available, fault-tolerant content ranking system and provided a REST interface to the algorithms.",
                 "Developed the Parsing Engine to scrape the RSS feeds of blogs and rank the content in the articles.",
@@ -48,6 +50,7 @@
             "type": "Full Time",
             "time" : "Jul 2019 - Nov 2019",
             "companyName" : "Kloudgin (Enterprise Signal Pvt Ltd)",
+            "tech": ["Java", "JavaScript", "SpringBoot", "Mongo", "MySQL", "Nginx", "Apache TomCat"],
             "description" : [
                 "Designed and implemented a modular, extendable, and easily maintainable Netsuite integration package to Kloudgin FSM tailored to the customer's needs.",
                 "Built customization to the Kloudgin UI to enable integration between platforms.",
@@ -59,6 +62,7 @@
             "type": "Full Time",
             "time" : "Nov 2019 - Mar 2022",
             "companyName" : "Infovity (Infovity India Pvt Ltd)",
+            "tech": ["Java", "JavaScript", "SpringBoot", "Mongo", "MySQL", "Nginx", "Apache TomCat", "PHP", "Laraval", "Docker", "Apache2"],
             "description" : [
                 "Added the support for video streaming for the crew training module for learning in Kloudgin.",
                 "Developed a wrapper to the Java iText Library to help facilitate the easy generation of the custom invoices in Kloudgin tailored to the developer's needs.",
