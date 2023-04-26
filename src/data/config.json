@@ -33,7 +33,7 @@
             "type": "Contract",
             "time" : "Nov 2019 - Mar 2022",
             "companyName" : "Blogsbunny (Aardwolf Security Pvt Ltd)",
-            "tech": ["PHP", "Python", "Java", "Shell", "Laraval", "Flask", "MySQL", "Docker", "Nginx", "Apache2"],
+            "tech": ["PHP", "Python", "Java", "Shell", "Laravel", "Flask", "MySQL", "Docker", "Nginx", "Apache2"],
             "description" : [
                 "Built a highly available, fault-tolerant content ranking system and provided a REST interface to the algorithms.",
                 "Developed the Parsing Engine to scrape the RSS feeds of blogs and rank the content in the articles.",
