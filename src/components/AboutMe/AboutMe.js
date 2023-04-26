@@ -40,13 +40,13 @@ function AboutMe(payload) {
                 }}>
                     {greeting}
                 </Typography>
-                {aboutMe}
+                <Stack spacing={0} direction="row">
+                    <Button startIcon={<GitHub />} size="large" href={social.github} target="_blank"></Button>
+                    <Button startIcon={<LinkedIn />} size="large" href={social.linkedin} target="_blank"></Button>
+                    <Button startIcon={<Twitter />} size="large" href={social.twitter} target="_blank"></Button>
+                </Stack>
+            {aboutMe}
         </Box>
-        <Stack spacing={0} direction="row">
-            <Button startIcon={<GitHub />} size="large" href={social.github} target="_blank"></Button>
-            <Button startIcon={<LinkedIn />} size="large" href={social.linkedin} target="_blank"></Button>
-            <Button startIcon={<Twitter />} size="large" href={social.twitter} target="_blank"></Button>
-        </Stack>
       </Container>
     );
 }
