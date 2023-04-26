@@ -62,7 +62,7 @@
             "type": "Full Time",
             "time" : "Nov 2019 - Mar 2022",
             "companyName" : "Infovity (Infovity India Pvt Ltd)",
-            "tech": ["Java", "JavaScript", "SpringBoot", "Mongo", "MySQL", "Nginx", "Apache TomCat", "PHP", "Laraval", "Docker", "Apache2"],
+            "tech": ["Java", "JavaScript", "SpringBoot", "Mongo", "MySQL", "Nginx", "Apache TomCat", "PHP", "Laravel", "Docker", "Apache2"],
             "description" : [
                 "Added the support for video streaming for the crew training module for learning in Kloudgin.",
                 "Developed a wrapper to the Java iText Library to help facilitate the easy generation of the custom invoices in Kloudgin tailored to the developer's needs.",
