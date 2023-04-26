@@ -1,11 +1,12 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import { Typography } from '@mui/material';
+import { Stack, Typography, Button } from '@mui/material';
+import { GitHub, LinkedIn, Twitter } from '@mui/icons-material';
 
 function AboutMe(payload) {
 
-    const { greeting, about } = payload.payload;
+    const { greeting, about, social } = payload.payload;
     const aboutMe = about.map((element, key) => (<Typography key={key} variant="body1" sx={{
         m: '2rem',
         mr: 2,
@@ -41,6 +42,11 @@ function AboutMe(payload) {
                 </Typography>
                 {aboutMe}
         </Box>
+        <Stack spacing={0} direction="row">
+            <Button startIcon={<GitHub />} size="large" href={social.github} target="_blank"></Button>
+            <Button startIcon={<LinkedIn />} size="large" href={social.linkedin} target="_blank"></Button>
+            <Button startIcon={<Twitter />} size="large" href={social.twitter} target="_blank"></Button>
+        </Stack>
       </Container>
     );
 }

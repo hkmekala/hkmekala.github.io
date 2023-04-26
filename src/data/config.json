@@ -3,6 +3,11 @@
     "greeting": "Hiya, Ther! 👋",
     "profilePic": "https://bkt.ams3.digitaloceanspaces.com/assets/propic.jpg",
     "panda" : "https://bkt.ams3.digitaloceanspaces.com/assets/panda.jpg",
+    "social" : {
+        "linkedin" : "https://www.linkedin.com/in/hkmekala",
+        "github" : "https://www.github.com/hkmekala",
+        "twitter" : "https://twitter.com/hkmekala"
+    },
     "about" : [
         "I am Harikrishna Mekala, Some things about me,",
         "I write code that helps me write less code... Developer with the ability to stare into a screen for longer periods of time without fatigue, also I am the person who invented a two-hour lunch break.",

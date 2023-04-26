@@ -9,14 +9,14 @@ import config from '../../data/config.json';
 
 
 function Landing() {
-	const { jobs, about, greeting, name, profilePic, panda } = config;
+	const { jobs, about, social, greeting, name, profilePic, panda } = config;
 
 	return (
 		<div className="Landing">
 			<Header payload={{name, profilePic}}></Header>
 			<Grid container spacing={2} justifyContent={"flex-start"}>
 				<Grid item sx={{display: 'flex'}} xs={12} md={6} lg={6}>
-					<AboutMe payload={{greeting, about}}></AboutMe>							
+					<AboutMe payload={{greeting, about, social}}></AboutMe>							
 				</Grid>
 				<Grid item sx={{display: 'flex'}} xs={12} md={6} lg={6}>
 					<Box component="img"
