@@ -6,7 +6,8 @@
     "social" : {
         "linkedin" : "https://www.linkedin.com/in/hkmekala",
         "github" : "https://www.github.com/hkmekala",
-        "twitter" : "https://twitter.com/hkmekala"
+        "twitter" : "https://twitter.com/hkmekala",
+        "resume" : "https://github.com/hkmekala/resume/blob/main/hkmekala_cv_5.pdf"
     },
     "about" : [
         "I am Harikrishna Mekala, Some things about me,",
@@ -17,10 +18,22 @@
     ],
     "jobs": [
         {
+            "role" : "Software Engineer 2",
+            "type": "Full Time",
+            "time" : "Jun 2023 - Present",
+            "companyName" : "PayPal India Pvt Ltd",
+            "tech": ["Java", "SpringBoot", "DynamoDB", "Oracle SQL", "AWS", "Kubernetes"],
+            "description" : [
+                "Leading the reengineering of (PayPal Payments) Settlement Infrastructure from on-premises to AWS Cloud, leveraging DynamoDB and EKS for enhanced scalability and performance.",
+                "Spearheaded the migration of a legacy C++ codebase to a modern Java SpringBoot framework.",
+                "Scrum Master, leading the team through agile practices and ensuring successful project delivery."
+            ]
+        },
+        {
             "role" : "Software Development Engineer 1",
             "type": "Full Time",
-            "time" : "Apr 2022 - Present",
-            "companyName" : "Tickertape (Anchorage Technologies Pvt Ltd)",
+            "time" : "Apr 2022 - May 2023",
+            "companyName" : "smallcase - (Tickertape, Anchorage Technologies Pvt Ltd)",
             "tech": ["TypeScript", "GoLang", "NestJs", "ExpressJs", "InfluxDb", "TimeScaleDb", "Mongo", "gRPC", "Pm2"],
             "description" : [
                 "Developed the services to Rank Equity Mutual Funds based on the total market capitalization of a company held by the fund, and the percentage of funds allocated for the said company in their portfolio.",
@@ -37,9 +50,10 @@
             "role" : "Software Engineer",
             "type": "Contract",
             "time" : "Nov 2019 - Mar 2022",
-            "companyName" : "Blogsbunny (Aardwolf Security Pvt Ltd)",
+            "companyName" : "Aardwolf Security Pvt Ltd",
             "tech": ["PHP", "Python", "Java", "Shell", "Laravel", "Flask", "MySQL", "Docker", "Nginx", "Apache2"],
             "description" : [
+                "Worked on Product - BlogsBunny (discontinued)",
                 "Built a highly available, fault-tolerant content ranking system and provided a REST interface to the algorithms.",
                 "Developed the Parsing Engine to scrape the RSS feeds of blogs and rank the content in the articles.",
                 "Completed the Setup of the entire CI/CD flow with SonarQube from Integration to the deployment of all the builds with automated code reviews.",
@@ -54,7 +68,7 @@
             "role" : "Software Engineer",
             "type": "Full Time",
             "time" : "Jul 2019 - Nov 2019",
-            "companyName" : "Kloudgin (Enterprise Signal Pvt Ltd)",
+            "companyName" : "Kloudgin SAAS India Pvt Ltd",
             "tech": ["Java", "JavaScript", "SpringBoot", "Mongo", "MySQL", "Nginx", "Apache TomCat"],
             "description" : [
                 "Designed and implemented a modular, extendable, and easily maintainable Netsuite integration package to Kloudgin FSM tailored to the customer's needs.",
@@ -66,7 +80,7 @@
             "role" : "Technical Consultant",
             "type": "Full Time",
             "time" : "Nov 2019 - Mar 2022",
-            "companyName" : "Infovity (Infovity India Pvt Ltd)",
+            "companyName" : "Infovity India Pvt Ltd",
             "tech": ["Java", "JavaScript", "SpringBoot", "Mongo", "MySQL", "Nginx", "Apache TomCat", "PHP", "Laravel", "Docker", "Apache2"],
             "description" : [
                 "Added the support for video streaming for the crew training module for learning in Kloudgin.",

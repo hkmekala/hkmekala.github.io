@@ -2,7 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import { Stack, Typography, Button } from '@mui/material';
-import { GitHub, LinkedIn, Twitter } from '@mui/icons-material';
+import { GitHub, LinkedIn, Twitter, PictureAsPdf } from '@mui/icons-material';
 
 function AboutMe(payload) {
 
@@ -44,6 +44,7 @@ function AboutMe(payload) {
                     <Button startIcon={<GitHub />} size="large" href={social.github} target="_blank"></Button>
                     <Button startIcon={<LinkedIn />} size="large" href={social.linkedin} target="_blank"></Button>
                     <Button startIcon={<Twitter />} size="large" href={social.twitter} target="_blank"></Button>
+                    <Button startIcon={<PictureAsPdf />} size="large" href={social.resume} target="_blank"></Button>
                 </Stack>
             {aboutMe}
         </Box>
