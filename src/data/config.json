@@ -1,93 +1,115 @@
 {
-    "name" : "Harikrishna Mekala",
-    "greeting": "Hiya, Ther! 👋",
+    "name": "Harikrishna Mekala",
+    "greeting": "Hi, there! 👋",
     "profilePic": "https://bkt.ams3.digitaloceanspaces.com/assets/propic.jpg",
-    "panda" : "https://bkt.ams3.digitaloceanspaces.com/assets/panda.jpg",
-    "social" : {
-        "linkedin" : "https://www.linkedin.com/in/hkmekala",
-        "github" : "https://www.github.com/hkmekala",
-        "twitter" : "https://twitter.com/hkmekala",
-        "resume" : "https://github.com/hkmekala/resume/blob/main/hkmekala_cv_5.pdf"
+    "panda": "https://bkt.ams3.digitaloceanspaces.com/assets/panda.jpg",
+    "social": {
+        "linkedin": "https://www.linkedin.com/in/hkmekala",
+        "github": "https://www.github.com/hkmekala",
+        "twitter": "https://twitter.com/hkmekala",
+        "resume": "https://github.com/hkmekala/resume/blob/main/hkmekala_cv_6_full.pdf"
     },
-    "about" : [
-        "I am Harikrishna Mekala, Some things about me,",
-        "I write code that helps me write less code... Developer with the ability to stare into a screen for longer periods of time without fatigue, also I am the person who invented a two-hour lunch break.",
-        "Jack of all trades, master of none, Most of the time I try to fix the cause, not the symptom.",
-        "Made Java for a couple of years with proficiency in PHP from college, trying to become a gopher.",
-        "Feel free to reach me out at me@hkmekala.me."
+    "about": [
+        "Senior Software Engineer with over 7 years of experience specializing in the design and development of scalable backend systems, cloud infrastructure, and AI/ML platforms.",
+        "Proven expertise in leading modernization projects, migrating legacy systems to cloud-native architectures using Java (Spring Boot), Node.js, and AWS.",
+        "Adept at working in fast-paced, Agile environments to deliver high-impact solutions. Feel free to reach out at me@hkmekala.me."
     ],
     "jobs": [
         {
-            "role" : "Software Engineer 2",
+            "role": "Senior Associate",
             "type": "Full Time",
-            "time" : "Jun 2023 - Present",
-            "companyName" : "PayPal India Pvt Ltd",
-            "tech": ["Java", "SpringBoot", "DynamoDB", "Oracle SQL", "AWS", "Kubernetes"],
-            "description" : [
-                "Leading the reengineering of (PayPal Payments) Settlement Infrastructure from on-premises to AWS Cloud, leveraging DynamoDB and EKS for enhanced scalability and performance.",
+            "time": "May 2025 - Present",
+            "companyName": "KeenAi Global",
+            "tech": ["Java", "Spring Boot", "NestJS", "TypeScript", "MongoDB"],
+            "description": [
+                "Developed key features for Pulse, KeenAi's flagship wealth management product, focusing on backend services and data processing.",
+                "Built Vault, a Dropbox-like internal file storage system, to enable secure, efficient, and auditable file management for Family Offices.",
+                "Executed a full-stack migration of the backend from Spring Boot (Java) to NestJS (TypeScript), improving system scalability and developer velocity."
+            ]
+        },
+        {
+            "role": "Software Engineer 3",
+            "type": "Full Time",
+            "time": "September 2024 - May 2025",
+            "companyName": "PayPal",
+            "tech": ["Python", "AI/ML", "LLM", "Azure OpenAI", "Java", "Kubernetes"],
+            "description": [
+                "Engineered and scaled Large Language Model (LLM) inference and training infrastructure to support high-throughput AI services.",
+                "Developed a new platform to integrate Azure OpenAI models, enabling advanced processing of audio, image, and text data.",
+                "Significantly enhanced the Data Loss Prevention (DLP) system, strengthening data security and compliance.",
+                "Implemented context management and hot-switching capabilities across Gemini, ChatGPT, and Claude models for optimal performance."
+            ]
+        },
+        {
+            "role": "Software Engineer 2",
+            "type": "Full Time",
+            "time": "June 2023 - August 2024",
+            "companyName": "PayPal",
+            "tech": ["Java", "SpringBoot", "DynamoDB", "AWS", "Kubernetes", "Oracle SQL"],
+            "description": [
+                "Led the reengineering of PayPal Payments settlement infrastructure from on-premises to AWS Cloud, leveraging DynamoDB and EKS for enhanced scalability.",
                 "Spearheaded the migration of a legacy C++ codebase to a modern Java SpringBoot framework.",
-                "Scrum Master, leading the team through agile practices and ensuring successful project delivery."
+                "Served as Scrum Master, guiding the team through agile practices to ensure successful project delivery."
             ]
         },
         {
-            "role" : "Software Development Engineer 1",
+            "role": "Software Development Engineer 1",
             "type": "Full Time",
-            "time" : "Apr 2022 - May 2023",
-            "companyName" : "smallcase - (Tickertape, Anchorage Technologies Pvt Ltd)",
-            "tech": ["TypeScript", "GoLang", "NestJs", "ExpressJs", "InfluxDb", "TimeScaleDb", "Mongo", "gRPC", "Pm2"],
-            "description" : [
-                "Developed the services to Rank Equity Mutual Funds based on the total market capitalization of a company held by the fund, and the percentage of funds allocated for the said company in their portfolio.",
-                "Added 24 new Indices into Tickertape's existing universe to help users track diverse sectors in the market.",
-                "Implemented the algorithm to calculate the PE (Profits to Earnings) and Volatility of the user's portfolio global and sector-based segregation view",
-                "Built highly available Tickertape's stock Scorecard API and Algorithm to calculate the diverse scores of individual stocks, Currently, scorecard serves 4.5 million users.",
-                "Added support for regular Mutual Funds for TickerTape, which led to an increase in the mutual fund universe by 50%.",
-                "Written internal services (GRPCs) to scale to millions of requests with efficient cache management using LRU.",
-                "Took the initiative of moving out from Tickertape's old API to a new pod-level segregation edge service by using the NestJS framework.",
-                "Ensured the code quality by performing timely code reviews of peers."
+            "time": "April 2022 - May 2023",
+            "companyName": "smallcase",
+            "tech": ["TypeScript", "GoLang", "NestJs", "ExpressJs", "InfluxDb", "TimeScaleDb", "Mongo", "gRPC"],
+            "description": [
+                "Developed services to rank Equity Mutual Funds based on market capitalization and fund allocation percentage.",
+                "Added 24 new Indices into Tickertape's universe to help users track diverse market sectors.",
+                "Implemented algorithms to calculate PE ratios and volatility for user portfolios with global and sector-based segregation.",
+                "Built the highly available Tickertape stock Scorecard API and algorithm, currently serving 4.5 million users.",
+                "Added support for regular Mutual Funds, increasing the platform's mutual fund universe by 50%.",
+                "Wrote internal gRPC services to scale to millions of requests with efficient LRU cache management.",
+                "Led the initiative of migrating Tickertape's legacy API to a new pod-level segregation service using the NestJS framework.",
+                "Ensured code quality by performing timely code reviews for peers."
             ]
         },
         {
-            "role" : "Software Engineer",
+            "role": "Software Engineer",
             "type": "Contract",
-            "time" : "Nov 2019 - Mar 2022",
-            "companyName" : "Aardwolf Security Pvt Ltd",
-            "tech": ["PHP", "Python", "Java", "Shell", "Laravel", "Flask", "MySQL", "Docker", "Nginx", "Apache2"],
-            "description" : [
-                "Worked on Product - BlogsBunny (discontinued)",
-                "Built a highly available, fault-tolerant content ranking system and provided a REST interface to the algorithms.",
-                "Developed the Parsing Engine to scrape the RSS feeds of blogs and rank the content in the articles.",
-                "Completed the Setup of the entire CI/CD flow with SonarQube from Integration to the deployment of all the builds with automated code reviews.",
-                "Developed the affiliate system to reward the users for referrals to Blogsbunny using Paypal Payout Integration.",
-                "Came up with an automated firewall-based throttling in a case of a DDOS attack on the API by analyzing short-range traffic bursts in the API code.",
-                "Implemented the Queuing mechanism of Blogsbunny content analysis to process large sets of news using the manager-worker model.",
-                "Implemented the delivery of the images through Edge Nodes using KeyCDN and Digital Ocean Spaces as the storage repository.",
-                "Extensive working experience using Scrum Agile Methodologies and Agile Development."
+            "time": "November 2019 - March 2022",
+            "companyName": "Aardwolf Security",
+            "tech": ["PHP", "Python", "Java", "Shell", "Laravel", "Flask", "MySQL", "Docker", "Nginx"],
+            "description": [
+                "Built a highly available, fault-tolerant content ranking system and provided a REST interface to its algorithms.",
+                "Developed a Parsing Engine to scrape RSS feeds of blogs and rank the content within articles.",
+                "Established the complete CI/CD flow with SonarQube for automated code reviews and deployments.",
+                "Developed an affiliate system to reward users for referrals using PayPal Payout Integration.",
+                "Designed an automated firewall-based throttling system to mitigate DDoS attacks by analyzing traffic bursts.",
+                "Implemented a queuing mechanism using a manager-worker model to process large sets of content asynchronously.",
+                "Set up image delivery through Edge Nodes using KeyCDN and Digital Ocean Spaces.",
+                "Gained extensive working experience using Scrum Agile Methodologies."
             ]
         },
         {
-            "role" : "Software Engineer",
+            "role": "Software Engineer",
             "type": "Full Time",
-            "time" : "Jul 2019 - Nov 2019",
-            "companyName" : "Kloudgin SAAS India Pvt Ltd",
-            "tech": ["Java", "JavaScript", "SpringBoot", "Mongo", "MySQL", "Nginx", "Apache TomCat"],
-            "description" : [
-                "Designed and implemented a modular, extendable, and easily maintainable Netsuite integration package to Kloudgin FSM tailored to the customer's needs.",
+            "time": "July 2019 - November 2019",
+            "companyName": "Kloudgin",
+            "tech": ["Java", "JavaScript", "SpringBoot", "Mongo", "MySQL", "Nginx"],
+            "description": [
+                "Designed and implemented a modular, extendable, and easily maintainable Netsuite integration package for Kloudgin FSM.",
                 "Built customization to the Kloudgin UI to enable integration between platforms.",
-                "Developed a distributed system for migration of large-scale datasets using a Multi-Threaded Data Migration Library to import customer's data from various platforms to Kloudgin ERP."
+                "Developed a distributed system for migrating large-scale datasets using a multi-threaded library to import customer data to Kloudgin ERP."
             ]
         },
         {
-            "role" : "Technical Consultant",
+            "role": "Technical Consultant",
             "type": "Full Time",
-            "time" : "Nov 2019 - Mar 2022",
-            "companyName" : "Infovity India Pvt Ltd",
-            "tech": ["Java", "JavaScript", "SpringBoot", "Mongo", "MySQL", "Nginx", "Apache TomCat", "PHP", "Laravel", "Docker", "Apache2"],
-            "description" : [
-                "Added the support for video streaming for the crew training module for learning in Kloudgin.",
-                "Developed a wrapper to the Java iText Library to help facilitate the easy generation of the custom invoices in Kloudgin tailored to the developer's needs.",
-                "Developed an automated Jar deployment plugin to enable the faster deployments of the business logic in the application.",
-                "Worked on changing the business logic in Kloudgin backend based on the Tech Specification received from the customers.",
-                "Designed and Developed an internal application with microservices using docker for tracking employee billables and biometric data in Infovity."
+            "time": "May 2018 - July 2019",
+            "companyName": "Infovity",
+            "tech": ["Java", "JavaScript", "SpringBoot", "Docker", "PHP", "Laravel"],
+            "description": [
+                "Added video streaming support for the crew training and learning module in Kloudgin.",
+                "Developed a wrapper for the Java iText Library to facilitate the easy generation of custom invoices in Kloudgin.",
+                "Developed an automated Jar deployment plugin for faster deployments of business logic.",
+                "Worked on changing the business logic in the Kloudgin backend based on customer tech specifications.",
+                "Designed and developed an internal microservices application using Docker for tracking employee billables and biometric data at Infovity."
             ]
         }
     ]
