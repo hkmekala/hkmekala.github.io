@@ -21,7 +21,7 @@ function Experience(payload) {
     ));
 
     return (
-        <Card sx={{ minWidth: 275 }}>
+        <Card className="experienceCard" sx={{ minWidth: 275 }}>
         <CardContent>
           <Typography sx={{ fontSize: 14, fontFamily: 'monospace' }} color="text.secondary" gutterBottom>
           {type + ' | ' + time}
@@ -32,7 +32,7 @@ function Experience(payload) {
           <Typography sx={{ mb: 1.5, fontFamily: 'monospace' }} color="text.secondary">
           {role}
           </Typography>
-          <Stack spacing={1} direction="row">
+          <Stack spacing={1} direction="row" sx={{ flexWrap: 'wrap' }}>
           {techStack}
           </Stack>  
           <List>
