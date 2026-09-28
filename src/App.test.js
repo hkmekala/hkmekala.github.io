@@ -1,8 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders backend profile content', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(screen.getByText(/Harikrishna Mekala/i)).toBeInTheDocument();
+  expect(screen.getByText(/Hi, there!/i)).toBeInTheDocument();
+  expect(screen.getByText(/KeenAi Global/i)).toBeInTheDocument();
 });

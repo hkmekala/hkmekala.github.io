@@ -24,7 +24,7 @@ function AboutMe(payload) {
 
     return (
         <Container maxWidth="md" sx={{ alignItems: 'stretch', height: 'auto'}}>
-        <Box sx={{ visibility: 'visible', alignItems: 'stretch'}} m={1}>
+        <Box className="aboutPanel" sx={{ visibility: 'visible', alignItems: 'stretch'}} m={1}>
                 <Typography variant="h5" component="div" sx={{
                     m: '2rem',
                     mr: 2,
@@ -41,10 +41,10 @@ function AboutMe(payload) {
                     {greeting}
                 </Typography>
                 <Stack spacing={0} direction="row">
-                    <Button startIcon={<GitHub />} size="large" href={social.github} target="_blank"></Button>
-                    <Button startIcon={<LinkedIn />} size="large" href={social.linkedin} target="_blank"></Button>
-                    <Button startIcon={<Twitter />} size="large" href={social.twitter} target="_blank"></Button>
-                    <Button startIcon={<PictureAsPdf />} size="large" href={social.resume} target="_blank"></Button>
+                    <Button className="socialButton" startIcon={<GitHub />} size="large" href={social.github} target="_blank"></Button>
+                    <Button className="socialButton" startIcon={<LinkedIn />} size="large" href={social.linkedin} target="_blank"></Button>
+                    <Button className="socialButton" startIcon={<Twitter />} size="large" href={social.twitter} target="_blank"></Button>
+                    <Button className="socialButton" startIcon={<PictureAsPdf />} size="large" href={social.resume} target="_blank"></Button>
                 </Stack>
             {aboutMe}
         </Box>

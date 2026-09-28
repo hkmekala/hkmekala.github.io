@@ -10,8 +10,10 @@ function Header(payload) {
         <AppBar position="fixed">
           <Toolbar disableGutters sx={{
             justifyContent: 'flex-end',
-            gradient: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-            boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+            background: 'rgba(9, 14, 30, 0.82)',
+            backdropFilter: 'blur(8px)',
+            borderBottom: '1px solid rgba(94, 234, 212, 0.2)',
+            boxShadow: '0 10px 30px rgba(2, 6, 23, 0.45)',
           }}>
            <Avatar sx={{
                 ml: 2,
