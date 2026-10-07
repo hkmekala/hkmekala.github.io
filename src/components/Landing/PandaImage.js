@@ -7,6 +7,11 @@ function PandaImage({ imageUrl }) {
   const imageRef = useRef(null);
 
   useEffect(() => {
+    if (typeof IntersectionObserver === 'undefined') {
+      setIsLoading(false);
+      return undefined;
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -31,7 +36,7 @@ function PandaImage({ imageUrl }) {
         observer.unobserve(imageRef.current);
       }
     };
-  }, [imageUrl]); // Add imageUrl to dependency array
+  }, [imageUrl]);
 
   return (
     <Grid item sx={{ display: 'flex' }} xs={12} md={6} lg={6}>

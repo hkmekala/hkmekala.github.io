@@ -14,6 +14,9 @@ function Landing() {
 
 	return (
 		<div className="Landing">
+			<div className="gridBackdrop" aria-hidden="true"></div>
+			<div className="floatingOrb orbOne" aria-hidden="true"></div>
+			<div className="floatingOrb orbTwo" aria-hidden="true"></div>
 			<Header payload={{name, profilePic}}></Header>
 			<Grid container spacing={2} justifyContent={"flex-start"}>
 				<Grid item sx={{display: 'flex'}} xs={12} md={6} lg={6}>
