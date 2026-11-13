@@ -23,6 +23,8 @@ export class Controls {
   constructor(stickEl: HTMLElement, knobEl: HTMLElement, jumpEl: HTMLElement) {
     const onKeyDown = (e: KeyboardEvent): void => {
       if (!this.enabled) return;
+      // leave Space and arrows alone when a button or link has focus
+      if (e.target instanceof HTMLButtonElement || e.target instanceof HTMLAnchorElement) return;
       if (e.code in KEY_AXIS || e.code === 'Space') e.preventDefault();
       if (e.code === 'Space' && !e.repeat) this.jumpQueued = true;
       if (e.code === 'KeyR' && !e.repeat) this.resetQueued = true;

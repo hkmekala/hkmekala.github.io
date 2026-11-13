@@ -1,6 +1,6 @@
 import gsap from 'gsap';
 import { zones, type Zone } from '../data/site';
-import { byId, el, isTouch, link } from './dom';
+import { byId, el, isTouch, link, prefersReducedMotion } from './dom';
 
 /** Everything drawn over the 3D world: timeline, info card, hints, toasts. */
 export class Hud {
@@ -11,6 +11,7 @@ export class Hud {
   private readonly count = byId('token-count', HTMLSpanElement);
   private readonly stops = new Map<string, HTMLButtonElement>();
   private toastTimer = 0;
+  private shown = false;
 
   constructor(onTravel: (zoneId: string) => void) {
     const journey = byId('journey', HTMLElement);
@@ -33,14 +34,24 @@ export class Hud {
       : 'WASD or arrow keys to move · Space to jump · Shift to boost · R to reset';
     this.root.classList.toggle('touch', isTouch());
     // on small screens the card starts collapsed; tap it to read the details
+    const toggleCard = (): void => {
+      const expanded = this.card.classList.toggle('expanded');
+      this.card.setAttribute('aria-expanded', String(expanded));
+    };
+    this.card.tabIndex = 0;
     this.card.addEventListener('click', (e) => {
-      if (e.target instanceof HTMLAnchorElement) return;
-      this.card.classList.toggle('expanded');
+      if (!(e.target instanceof HTMLAnchorElement)) toggleCard();
+    });
+    this.card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && e.target === this.card) toggleCard();
     });
   }
 
   show(): void {
     this.root.hidden = false;
+    // play the entrance once; coming back from the résumé should be instant
+    if (this.shown || prefersReducedMotion()) return;
+    this.shown = true;
     gsap.fromTo('.hud-top', { y: -70, opacity: 0 }, { y: 0, opacity: 1, duration: 0.9, delay: 1.6, ease: 'power3.out' });
     gsap.fromTo(this.hint, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.8, delay: 2.4 });
     gsap.fromTo('#stick, #jump', { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.6, delay: 2.2, stagger: 0.1, ease: 'back.out(2)' });
@@ -79,6 +90,7 @@ export class Hud {
     }
     this.fill(zone);
     this.card.classList.remove('expanded');
+    this.card.setAttribute('aria-expanded', 'false');
     this.card.classList.add('open');
     this.card.scrollTop = 0;
     gsap.fromTo(this.card, { opacity: 0, x: 50 }, { opacity: 1, x: 0, duration: 0.55, ease: 'power3.out' });

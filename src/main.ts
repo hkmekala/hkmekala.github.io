@@ -59,7 +59,7 @@ function showWorld(): void {
 function leaveIntro(next: () => void): void {
   gsap.to(intro, {
     opacity: 0,
-    duration: 0.6,
+    duration: prefersReducedMotion() ? 0 : 0.6,
     ease: 'power2.in',
     onComplete: () => {
       intro.hidden = true;
@@ -87,13 +87,15 @@ async function loadWorld(): Promise<void> {
   hud.setTokens(0, instance.tokenTotal);
   enterWorld.disabled = false;
   enterWorld.textContent = 'Enter the world';
+  plainWorldButton.disabled = false;
+  plainWorldButton.textContent = 'Explore the 3D world';
   gsap.fromTo(enterWorld, { scale: 0.92 }, { scale: 1, duration: 0.7, ease: 'elastic.out(1, 0.45)' });
 }
 
 // --- boot -----------------------------------------------------------------
 
 const webgl = hasWebGL();
-renderPlain(webgl ? () => (world ? showWorld() : undefined) : null);
+const plainWorldButton = renderPlain(webgl ? showWorld : null);
 
 const letters = splitLetters(byId('intro-name', HTMLHeadingElement), profile.name);
 if (!prefersReducedMotion()) {
@@ -118,6 +120,7 @@ if (webgl) {
   loadWorld().catch((error: unknown) => {
     console.error('World failed to load', error);
     enterWorld.hidden = true;
+    plainWorldButton.hidden = true;
     introNote.textContent = 'The 3D world could not start on this device, but the résumé view has everything.';
   });
 } else {

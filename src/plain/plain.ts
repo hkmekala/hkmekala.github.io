@@ -28,12 +28,14 @@ function jobCard(job: Zone, index: number): HTMLElement {
 }
 
 /** Builds the résumé page from the same data the 3D world uses. */
-export function renderPlain(onEnterWorld: (() => void) | null): void {
+export function renderPlain(onEnterWorld: (() => void) | null): HTMLButtonElement {
   const root = byId('plain', HTMLElement);
   const name = el('h1', { class: 'hero-name', label: profile.name });
   splitLetters(name, profile.name);
 
-  const worldButton = el('button', { class: 'btn btn-primary magnetic', type: 'button', text: 'Explore the 3D world' });
+  // main.ts enables this once the world has loaded, or hides it if it cannot
+  const worldButton = el('button', { class: 'btn btn-primary magnetic', type: 'button', text: 'Loading 3D world…' });
+  worldButton.disabled = true;
   if (onEnterWorld) worldButton.addEventListener('click', onEnterWorld);
   else worldButton.hidden = true;
 
@@ -81,6 +83,7 @@ export function renderPlain(onEnterWorld: (() => void) | null): void {
       el('p', { class: 'footer', text: `© ${new Date().getFullYear()} ${profile.name}` }),
     ]),
   );
+  return worldButton;
 }
 
 let animated = false;

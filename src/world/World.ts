@@ -46,6 +46,7 @@ export class World {
   private frame = 0;
   private zoom = 1;
   private moved = false;
+  private introDone = false;
   /** 1 = looking at the whole island from above, 0 = following the player. */
   private readonly intro = { value: 1 };
 
@@ -129,10 +130,11 @@ export class World {
     this.start();
     gsap.to(this.intro, {
       value: 0,
-      duration: 2.6,
+      duration: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 2.6,
       ease: 'power3.inOut',
       onComplete: () => {
-        this.controls.enabled = true;
+        this.introDone = true;
+        this.controls.enabled = this.running;
       },
     });
   }
@@ -140,12 +142,15 @@ export class World {
   start(): void {
     if (this.running) return;
     this.running = true;
+    this.controls.enabled = this.introDone;
     this.timer.update();
     this.frame = requestAnimationFrame(this.tick);
   }
 
   stop(): void {
     this.running = false;
+    // hand the keyboard back to the page (Space and arrows scroll the résumé)
+    this.controls.enabled = false;
     cancelAnimationFrame(this.frame);
   }
 
